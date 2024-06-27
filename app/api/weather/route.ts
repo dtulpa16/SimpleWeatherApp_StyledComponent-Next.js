@@ -15,7 +15,8 @@ export async function GET(request: Request) {
     try {
         const response = await fetch(url, options);
         const result = await response.text();
-        return result
+        console.log(result)
+        return Response.json({result})
     } catch (error) {
         console.error(error);
     }

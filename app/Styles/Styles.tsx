@@ -25,6 +25,9 @@ export const Input = styled.input`
   width: 100%;
   border: 1px solid var(--accent);
   border-radius: 0.7rem;
+  &:focus{
+    outline: 1px solid var(--darkblue);
+  }
 `;
 
 export const Button = styled.button`
@@ -54,5 +57,5 @@ export const Body = styled.body`
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
-  background-image: linear-gradient(to bottom right, #002db3, #0000ff);
+  background-image: linear-gradient(to bottom right, #002db3, #3a3afc);
 `;

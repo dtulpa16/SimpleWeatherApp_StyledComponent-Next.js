@@ -7,14 +7,15 @@ import {
   SearchButton,
 } from "../../Styles/Styles";
 import GlobalStyle from "../../Styles/GlobalStyles";
+import { searchWeather } from "@/app/utils/actions/search";
 
 export default function HomePage() {
   return (
     <>
       <GlobalStyle />
-      <Form>
+      <Form action={searchWeather}>
         <FormHeader>Search Weather</FormHeader>
-        <Input type="text" placeholder="Enter City, State, or ZIP Code" />
+        <Input name="search" type="text" placeholder="Enter City, State, or ZIP Code" />
         <SearchButton>Search</SearchButton>
       </Form>
     </>

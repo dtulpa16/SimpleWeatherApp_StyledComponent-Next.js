@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 :root {
-    --primary: '#0000ff';
-    --secondary: '#bfcfff';
-  }
+  --primary: "#0000ff";
+  --secondary: "#bfcfff";
+  --accent: "#809fff";
+}
+
+/* html {
+  background-color: #002db3;
+} */

@@ -1,6 +1,10 @@
 <h1>Simple Weather App with Styled Components</h1>
 <p>This project is a simple weather application built with Next.js 14 and styled-components. It was created to refresh and improve skills in using styled-components.</p>
-    
+
+## Preview
+
+![WeatherBug Preview](https://github.com/dtulpa16/SimpleWeatherApp_StyledComponent-Next.js/blob/main/public/WeatherBugPreview.png)
+
 <h2>Getting Started</h2>
     
 <h3>Prerequisites</h3>

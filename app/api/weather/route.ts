@@ -2,7 +2,7 @@ export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const location = searchParams.get("location");
 
-  const url =`https://weatherapi-com.p.rapidapi.com/forecast.json?q=${location}`;
+  const url =`https://weatherapi-com.p.rapidapi.com/forecast.json?q=${location}&days=3`;
 
   const options = {
         method: 'GET',
@@ -14,9 +14,8 @@ export async function GET(request: Request) {
 
     try {
         const response = await fetch(url, options);
-        const result = await response.text();
-        console.log(result)
-        return Response.json({result})
+        const weather = await response.json();
+        return Response.json({weather})
     } catch (error) {
         console.error(error);
     }

@@ -1,11 +1,9 @@
-import HomePage from "./components/layouts/HomePage";
-
-
+import SearchBar from "./components/SearchBar";
 
 export default function Home() {
   return (
     <main>
-        <HomePage/>
+      <SearchBar/>
     </main>
   );
 }

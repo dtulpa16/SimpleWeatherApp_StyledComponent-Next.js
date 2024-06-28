@@ -5,11 +5,11 @@ import {
   FormHeader,
   Input,
   SearchButton,
-} from "../../Styles/Styles";
-import GlobalStyle from "../../Styles/GlobalStyles";
+} from "../Styles/Styles";
+import GlobalStyle from "../Styles/GlobalStyles";
 import { searchWeather } from "@/app/utils/actions/search";
 
-export default function HomePage() {
+export default function SearchBar() {
   return (
     <>
       <GlobalStyle />

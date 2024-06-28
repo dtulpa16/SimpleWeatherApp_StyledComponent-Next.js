@@ -14,6 +14,7 @@ export const Form = styled.form`
   background-color: #f7f7fa;
   margin: 0 auto;
 `;
+
 export const FormHeader = styled.h1`
   color: var(--darkblue);
   font-size: 28px;

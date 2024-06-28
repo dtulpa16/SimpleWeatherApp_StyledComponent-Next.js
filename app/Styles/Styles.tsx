@@ -2,26 +2,7 @@
 
 import styled from "styled-components";
 
-export const Form = styled.form`
-  padding: 2rem 2rem;
-  border-radius: 0.5rem;
-  display: flex;
-  box-shadow: 2px 2px 2px #c2c2c28a;
-  max-width: 50%;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
-  background-color: #f7f7fa;
-  margin: 0 auto;
-  width: 100%;
-`;
-export const SearchPageContainer = styled.div`
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-`;
+
 export const FormHeader = styled.h1`
   color: var(--darkblue);
   font-size: 28px;
@@ -54,9 +35,41 @@ export const Button = styled.button`
     border: 1px solid #54545438;
   }
 `;
+export const Form = styled.form`
+  padding: 2rem 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  box-shadow: 2px 2px 2px #c2c2c28a;
+  max-width: 50%;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: #f7f7fa;
+  margin: 0 auto;
+  width: 100%;
+  @media (max-width:768px) {
+    max-width: 95%;
+    box-shadow: none;
+  }
+`;
+
 export const SearchButton = styled(Button)`
   width: 10rem;
 `;
+
+export const SearchPageContainer = styled.div`
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  @media (max-width:768px) {
+    height: 100vh;
+    background-color: #f7f7fa;
+    
+  }
+`;
+
 export const Body = styled.body`
   max-width: 1192px;
   margin: 0 auto;

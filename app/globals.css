@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Barlow:ital@1&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,7 +8,9 @@
   --secondary: "#bfcfff";
   --accent: "#809fff";
 }
-
+* {
+  font-family: "Barlow", sans-serif;
+}
 /* html {
   background-color: #002db3;
 } */

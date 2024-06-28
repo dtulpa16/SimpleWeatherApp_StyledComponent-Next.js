@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   :root {
@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
     --primary: #0000ff;
     --secondary: #bfcfff;
     --accent: #809fff;
+    --darkblueopaque:#183f94;
   }
   body {
     margin: 0;

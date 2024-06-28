@@ -58,7 +58,5 @@ export const Body = styled.body`
   flex-direction: column;
   align-items: stretch;
   background-image: linear-gradient(to bottom right, #002db3, #3a3afc);
-  @media (max-width: 768px) {
-    padding: 1rem;
-  }
+
 `;

@@ -2,7 +2,7 @@ export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const location = searchParams.get("location");
 
-  const url =`https://weatherapi-com.p.rapidapi.com/forecast.json?q=${location}&days=3`;
+  const url =`https://weatherapi-com.p.rapidapi.com/forecast.json?q=${location}&days=5`;
 
   const options = {
         method: 'GET',

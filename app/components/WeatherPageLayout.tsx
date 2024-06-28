@@ -32,8 +32,8 @@ export default function WeatherPageLayout({ weather }: WeatherApiResponse) {
           lowTemp={weather.forecast.forecastday[0].day.mintemp_f}
           wind={weather.current.wind_mph}
           rain={weather.forecast.forecastday[0].day.daily_chance_of_rain}
-          sunrise="6:30"
-          sunset="8:30"
+          sunrise={weather.forecast.forecastday[0].astro.sunrise}
+          sunset={weather.forecast.forecastday[0].astro.sunset}
         />
       </WeatherPageContainer>
     </>

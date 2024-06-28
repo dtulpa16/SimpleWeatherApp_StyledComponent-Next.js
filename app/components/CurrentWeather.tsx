@@ -40,6 +40,7 @@ const CurrentTemp = styled.div`
     padding-bottom: 3rem;
     border-right:none;
     border-bottom: solid #ffffff63 1px;
+    gap: 1rem;
   }
 `;
 
@@ -106,15 +107,15 @@ export default function CurrentWeather({
 }: WeatherInfoProps) {
   return (
     <CurrentWeatherContainer>
-
+        {/* Temp  */}
       <CurrentTemp>
-        <Image src={"https:" + icon} alt="condition icon" height={96} width={96} />
+        <Image src={"https:" + icon} alt="condition icon" height={126} width={126} />
         <CurrentTempTextContainer>
           <CurrentTempText>{currentTemp}</CurrentTempText>
           <CurrentConditionsText>{conditionText}</CurrentConditionsText>
         </CurrentTempTextContainer>
       </CurrentTemp>
-        {/* spacer  */}
+        {/* Conditions  */}
       <GridContainer>
         <WeatherInfoItem>
           <Detail>{highTemp}</Detail>

@@ -24,7 +24,7 @@ const CurrentWeatherContainer = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    gap: 3rem;
+    gap: 4rem;
     align-items: normal;
   }
   
@@ -37,7 +37,7 @@ const CurrentTemp = styled.div`
   flex: 1;
   border-right: solid #ffffff63 1px;
   @media (max-width: 768px) {
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
     border-right:none;
     border-bottom: solid #ffffff63 1px;
   }
@@ -63,24 +63,27 @@ const CurrentConditionsText = styled.p`
 const GridContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  grid-auto-rows: minmax(auto,60px);
+  gap: 2rem;
   font-size: 16px;
   color: white;
   flex: 1;
+  max-width: 100%;
+  justify-items: center;
+  @media(max-width:768px){
+    gap: 2.5rem;
+  }
+  
 `;
 const WeatherInfoItem = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-`;
-
-const Temperature = styled.p`
-  font-size: 24px;
   margin: 0;
 `;
 
 const Detail = styled.p`
-  font-size: 18px;
+  font-size: 26px;
   margin: 0;
 `;
 
@@ -89,6 +92,7 @@ const Label = styled.p`
   margin: 0;
   opacity: 0.8;
 `;
+
 export default function CurrentWeather({
   icon,
   currentTemp,
@@ -113,15 +117,15 @@ export default function CurrentWeather({
         {/* spacer  */}
       <GridContainer>
         <WeatherInfoItem>
-          <Temperature>{highTemp}</Temperature>
+          <Detail>{highTemp}</Detail>
           <Label>High</Label>
         </WeatherInfoItem>
         <WeatherInfoItem>
-          <Temperature>{lowTemp}</Temperature>
+          <Detail>{lowTemp}</Detail>
           <Label>Low</Label>
         </WeatherInfoItem>
         <WeatherInfoItem>
-          <Detail>{wind}</Detail>
+          <Detail>{wind}mph</Detail>
           <Label>Wind</Label>
         </WeatherInfoItem>
         <WeatherInfoItem>

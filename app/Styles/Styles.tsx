@@ -57,6 +57,8 @@ export const Body = styled.body`
   min-height: 100vh;
   flex-direction: column;
   align-items: stretch;
-  justify-content: center;
   background-image: linear-gradient(to bottom right, #002db3, #3a3afc);
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
 `;

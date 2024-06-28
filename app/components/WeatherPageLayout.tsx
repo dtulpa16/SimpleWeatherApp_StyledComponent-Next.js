@@ -10,10 +10,8 @@ const WeatherPageContainer = styled.div`
   flex-direction: column;
   gap: 2rem;
   padding: 2rem;
-  min-height: 96vh;
   @media (max-width: 768px) {
     padding: 1rem 2rem;
-    min-height: 100vh;
     gap: 1rem;
   }
 `;

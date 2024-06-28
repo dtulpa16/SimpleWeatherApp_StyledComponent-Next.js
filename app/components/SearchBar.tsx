@@ -9,7 +9,6 @@ import {
 } from "../Styles/Styles";
 import GlobalStyle from "../Styles/GlobalStyles";
 import { searchWeather } from "@/app/utils/actions/search";
-import styled from "styled-components";
 
 
 export default function SearchBar() {

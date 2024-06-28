@@ -11,7 +11,7 @@ export default function HourForecastCard({time,icon,temp}:HourForecastCardProps)
     return (
     <HourlyForecastCard>
         <p>{time}</p>
-        <Image src={"https:" + icon} alt="condition icon" height={52} width={52} />
+        <Image placeholder="blur" src={"https:" + icon} alt="condition icon" height={52} width={52} />
         <p>{Math.round(temp)}°F</p>
     </HourlyForecastCard>
   )

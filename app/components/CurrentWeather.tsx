@@ -118,7 +118,7 @@ export default function CurrentWeather({
     <CurrentWeatherContainer>
         {/* Temp  */}
       <CurrentTemp>
-        <Image src={"https:" + icon} alt="condition icon" height={96} width={96} />
+        <Image placeholder="blur" priority src={"https:" + icon} alt="condition icon" height={96} width={96} />
         <CurrentTempTextContainer>
           <CurrentTempText>{currentTemp}°F</CurrentTempText>
           <CurrentConditionsText>{conditionText}</CurrentConditionsText>

@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
     --primary: #0000ff;
     --secondary: #bfcfff;
     --accent: #809fff;
-    --darkblueopaque:#183f94;
+    --darkblueopaque:#183f94d3;
   }
   body {
     margin: 0;

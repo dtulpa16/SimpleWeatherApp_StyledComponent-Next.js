@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import StyledComponentsRegistry from "./utils/registry";
-import { Body } from "./Styles/Styles";
+import { Body, RootContainer } from "./Styles/Styles";
+import Navbar from "./components/Navbar";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +17,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Body className="">
-        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        <Navbar />
+        <RootContainer>
+          <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        </RootContainer>
       </Body>
     </html>
   );

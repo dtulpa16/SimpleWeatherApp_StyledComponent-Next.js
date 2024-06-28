@@ -2,7 +2,6 @@
 
 import styled from "styled-components";
 
-
 export const FormHeader = styled.h1`
   color: var(--darkblue);
   font-size: 28px;
@@ -47,7 +46,7 @@ export const Form = styled.form`
   background-color: #f7f7fa;
   margin: 0 auto;
   width: 100%;
-  @media (max-width:768px) {
+  @media (max-width: 768px) {
     max-width: 95%;
     box-shadow: none;
   }
@@ -58,26 +57,29 @@ export const SearchButton = styled(Button)`
 `;
 
 export const SearchPageContainer = styled.div`
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  @media (max-width:768px) {
-    height: 100vh;
+  @media (max-width: 768px) {
+    height: 95vh;
     background-color: #f7f7fa;
-    
   }
 `;
 
 export const Body = styled.body`
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom right, #0c36b4, #3838f8e4);
+`;
+
+export const RootContainer = styled.div`
   max-width: 1192px;
   margin: 0 auto;
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
   align-items: stretch;
-  background-image: linear-gradient(to bottom right, #002db3, #3a3afc);
+  padding-top: 4rem;
 `;
 
 export const HourlyForecastContainer = styled.div`
@@ -91,7 +93,7 @@ export const HourlyForecastContainer = styled.div`
     font-size: 30px;
     font-weight: lighter;
   }
-  @media (max-width:768px) {
+  @media (max-width: 768px) {
     margin-top: 0;
   }
 `;
@@ -137,5 +139,49 @@ export const HourlyForecastCard = styled.div`
     gap: 0.1rem;
     flex-basis: 22%;
     padding: 0.2rem 0.6rem;
+  }
+`;
+
+export const NavbarContainer = styled.nav`
+  background-color: var(--primary);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  @media (max-width: 768px) {
+    padding: 0.8rem 1rem;
+  }
+`;
+
+export const Logo = styled.h1`
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+  @media (max-width: 768px) {
+    font-size: 1.4rem;
+    font-weight: bolder;
+  }
+`;
+
+export const SearchInput = styled.input`
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: 2px solid var(--secondary);
+  color: black;
+  border-radius: 30px;
+  outline: none;
+  transition: border-color 0.3s;
+  @media (max-width: 768px) {
+    padding: 0.1rem .8rem;
+  }
+
+  &:focus {
+    border-color: var(--accent);
   }
 `;

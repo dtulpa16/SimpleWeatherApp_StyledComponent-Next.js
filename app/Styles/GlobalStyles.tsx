@@ -20,6 +20,12 @@ const GlobalStyle = createGlobalStyle`
     display: none;
   }
   }
+  #mobile-show{
+    display: none;
+    @media (max-width: 768px) {
+    display: contents;
+  }
+  }
 `;
 
 export default GlobalStyle;

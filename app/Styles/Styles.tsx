@@ -205,7 +205,7 @@ export const WeeklyForecastCardContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: .7rem;
+  gap: 0.7rem;
   flex-wrap: wrap;
   @media (max-width: 768px) {
     gap: 0.8rem;
@@ -223,13 +223,30 @@ export const WeeklyForecastCard = styled.div`
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   width: 100%;
-  padding: .7rem 0;
+  padding: 0.7rem 0;
   justify-items: center;
   background-color: var(--darkblueopaque);
   align-items: center;
   @media (max-width: 768px) {
     gap: 0.8rem;
     grid-template-columns: repeat(4, 1fr);
-    padding: .3rem;
+    padding: 0.3rem;
+  }
+`;
+export const WeatherIconContainer = styled.div`
+  width: 35%;
+
+  > div {
+    position: unset !important;
+  }
+
+  .icon {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+  @media (max-width: 768px) {
+    width: 65%;
   }
 `;

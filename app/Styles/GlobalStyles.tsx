@@ -15,6 +15,11 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
+  #future-hide{
+    @media (max-width: 768px) {
+    display: none;
+  }
+  }
 `;
 
 export default GlobalStyle;

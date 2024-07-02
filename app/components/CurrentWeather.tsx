@@ -78,14 +78,14 @@ const GridContainer = styled.div`
   }
   
 `;
-const WeatherInfoItem = styled.div`
+export const WeatherInfoItem = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0;
 `;
 
-const Detail = styled.p`
+export const Detail = styled.p`
   font-size: 26px;
   margin: 0;
   @media (max-width:768px) {
@@ -93,7 +93,7 @@ const Detail = styled.p`
   }
 `;
 
-const Label = styled.p`
+export const Label = styled.p`
   font-size: 18px;
   font-weight: lighter;
   margin: 0;

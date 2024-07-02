@@ -6,6 +6,7 @@ import Header from "./Header";
 import CurrentWeather from "./CurrentWeather";
 import GlobalStyle from "../Styles/GlobalStyles";
 import HourlyForecast from "./HourlyForecast";
+import WeeklyForecast from "./WeeklyForecast";
 const WeatherPageContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -41,6 +42,7 @@ export default function WeatherPageLayout({ weather }: WeatherApiResponse) {
           forecast={weather.forecast.forecastday[0]}
           icon={weather.current.condition.icon}
         />
+        <WeeklyForecast forecast={weather.forecast.forecastday}/>
       </WeatherPageContainer>
     </>
   );

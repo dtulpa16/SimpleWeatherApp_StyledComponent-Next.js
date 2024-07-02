@@ -178,10 +178,58 @@ export const SearchInput = styled.input`
   outline: none;
   transition: border-color 0.3s;
   @media (max-width: 768px) {
-    padding: 0.1rem .8rem;
+    padding: 0.1rem 0.8rem;
   }
 
   &:focus {
     border-color: var(--accent);
+  }
+`;
+export const WeeklyForecastContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 2rem;
+  gap: 1.5rem;
+  color: white;
+  > h4 {
+    font-size: 30px;
+    font-weight: lighter;
+  }
+  @media (max-width: 768px) {
+    margin-top: 0;
+  }
+`;
+
+export const WeeklyForecastCardContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: .7rem;
+  flex-wrap: wrap;
+  @media (max-width: 768px) {
+    gap: 0.8rem;
+  }
+  & > :first-child {
+    background-color: var(--accent);
+    color: black;
+    @media (max-width: 768px) {
+      min-width: 0;
+    }
+  }
+`;
+
+export const WeeklyForecastCard = styled.div`
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 100%;
+  padding: .7rem 0;
+  justify-items: center;
+  background-color: var(--darkblueopaque);
+  align-items: center;
+  @media (max-width: 768px) {
+    gap: 0.8rem;
+    grid-template-columns: repeat(4, 1fr);
+    padding: .3rem;
   }
 `;

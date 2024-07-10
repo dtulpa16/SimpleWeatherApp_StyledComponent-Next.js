@@ -7,6 +7,12 @@ export const FormHeader = styled.h1`
   font-size: 28px;
   font-weight: 600;
 `;
+export const Italic = styled.p`
+  color: #535353;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: lighter;
+`;
 
 export const Input = styled.input`
   padding: 10px 10px;
@@ -24,17 +30,28 @@ export const Button = styled.button`
   color: var(--white);
   border: none;
   cursor: pointer;
-  border-radius: 0.7rem;
+  border-radius: 0.5rem;
   transition: all 0.2s;
   border: 1px solid #ffffff;
   &:hover {
     transform: scaleX(102%);
     background-color: white;
     color: var(--primary);
-    border: 1px solid #54545438;
+    border: 1px solid #54545422;
   }
 `;
 export const Form = styled.form`
+  border-radius: 0.5rem;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0 auto;
+  width: 100%;
+  
+`;
+export const LocationSearchContainer = styled.form`
   padding: 2rem 2rem;
   border-radius: 0.5rem;
   display: flex;
@@ -42,7 +59,7 @@ export const Form = styled.form`
   max-width: 50%;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: .4rem;
   background-color: #f7f7fa;
   margin: 0 auto;
   width: 100%;

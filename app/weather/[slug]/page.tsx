@@ -11,7 +11,7 @@ export default async function WeatherDetailsPage({
 }) {
   const location = params.slug || "Chicago, Il";
   const data = await fetch(
-    `http://localhost:3000/api/weather?location=${location}`
+    `${process.env.BASE_URL}/api/weather?location=${location}`
   );
 
   let forecast: WeatherApiResponse = await data.json();

@@ -51,7 +51,7 @@ export const Form = styled.form`
   width: 100%;
   
 `;
-export const LocationSearchContainer = styled.form`
+export const LocationSearchContainer = styled.div`
   padding: 2rem 2rem;
   border-radius: 0.5rem;
   display: flex;

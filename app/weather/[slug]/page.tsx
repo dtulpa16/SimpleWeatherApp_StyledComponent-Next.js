@@ -2,7 +2,7 @@
 import GlobalStyle from "@/app/Styles/GlobalStyles";
 import WeatherPageLayout from "@/app/components/WeatherPageLayout";
 import { WeatherApiResponse } from "@/app/utils/types";
-import React from "react";
+import React, { Suspense } from "react";
 
 export default async function WeatherDetailsPage({
   params,
@@ -18,9 +18,9 @@ export default async function WeatherDetailsPage({
   const { weather } = forecast;
 
   return weather ? (
-    <>
+    <Suspense fallback={<></>}>
       <GlobalStyle />
       <WeatherPageLayout weather={weather} />
-    </>
+    </Suspense>
   ) : null;
 }

@@ -7,7 +7,6 @@ import {
   SearchButton,
   SearchPageContainer,
   LocationSearchContainer,
-  Button,
   Italic,
 } from "../Styles/Styles";
 import GlobalStyle from "../Styles/GlobalStyles";

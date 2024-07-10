@@ -1,4 +1,7 @@
 <h1>Simple Weather App with Styled Components</h1>
+<a href="https://weather-bug-one.vercel.app/">Check it out!</a>
+<br/>
+<br/>
 <p>This project is a simple weather application built with Next.js 14 and styled-components. It was created to refresh and improve skills in using styled-components.</p>
 
 ## Preview

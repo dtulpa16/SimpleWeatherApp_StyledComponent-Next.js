@@ -5,7 +5,7 @@ import GlobalStyle from "../Styles/GlobalStyles";
 
 type HeaderProps = {
   location: string;
-  date: string;
+  date: string | null;
 };
 
 const HeaderContainer = styled.div`

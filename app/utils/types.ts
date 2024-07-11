@@ -127,6 +127,7 @@ export interface WeatherApiResponse {
   weather: {
     location: WeatherLocation;
     current: CurrentWeather;
+    error?:boolean;
     forecast: {
       forecastday: DailyForecast[];
     };

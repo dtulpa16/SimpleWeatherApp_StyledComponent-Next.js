@@ -16,11 +16,11 @@ export default async function WeatherDetailsPage({
 
   let forecast: WeatherApiResponse = await data.json();
   const { weather } = forecast;
-
-  return weather ? (
+  
+  return (
     <Suspense fallback={<></>}>
       <GlobalStyle />
       <WeatherPageLayout weather={weather} />
     </Suspense>
-  ) : null;
+  )
 }

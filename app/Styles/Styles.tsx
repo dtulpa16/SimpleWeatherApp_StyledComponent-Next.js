@@ -108,9 +108,10 @@ export const WeatherPageContainer = styled.div`
   flex-direction: column;
   gap: 2rem;
   position: relative;
+  padding-bottom: 2rem;
   top: 2rem;
   @media (max-width: 768px) {
-    padding: 0.5rem 0.8rem;
+    padding: 0.5rem 0.8rem 2rem;
     gap: 1rem;
     top: 0;
   }

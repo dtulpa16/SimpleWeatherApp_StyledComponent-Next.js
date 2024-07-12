@@ -13,6 +13,7 @@ const HeaderContainer = styled.div`
   display: flex;
   flex-direction: column;
   color: white;
+  
 `;
 const Location = styled.h1`
   font-size: 48px;

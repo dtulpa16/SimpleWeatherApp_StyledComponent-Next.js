@@ -9,20 +9,21 @@ const horizontalScrollAnimation = keyframes`
 `;
 
 export const Body = styled.body`
-  min-height: 90vh;
-  background-image: linear-gradient(to bottom right, #0137dad6, #0137dad6),
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom right, #0133cae1, #0133cae1),
     url("/assets/clouds.jpg");
-    background-size: contain;
+    background-size: cover;
   width: 100%;
+  background-blend-mode: multiply;
   animation-name: ${horizontalScrollAnimation};
-  animation-duration: 140s;
+  animation-duration: 160s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   @media (max-width: 768px) {
-    animation-duration: 120s;
-    background-size: cover;
+    animation-duration: 180s;
     background-image: linear-gradient(to bottom right, #0137dadf, #0137dadf),
     url("/assets/clouds.jpg");
+    background-size: cover;
   }
 `;
 
@@ -106,10 +107,12 @@ export const WeatherPageContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 2rem;
+  position: relative;
+  top: 2rem;
   @media (max-width: 768px) {
     padding: 0.5rem 0.8rem;
     gap: 1rem;
+    top: 0;
   }
 `;
 export const SearchButton = styled(Button)`
@@ -122,9 +125,6 @@ export const SearchPageContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  @media (max-width: 768px) {
-    background-color: #f7f7fa21;
-  }
 `;
 
 

@@ -1,7 +1,6 @@
 
 import React from "react";
 import { WeatherApiResponse } from "../utils/types";
-import styled from "styled-components";
 import Header from "./Header";
 import CurrentWeather from "./CurrentWeather";
 import GlobalStyle from "../Styles/GlobalStyles";

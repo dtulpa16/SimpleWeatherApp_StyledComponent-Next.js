@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import { DailyForecast as HourlyForecastType } from "../utils/types";
 import {
@@ -19,7 +20,6 @@ export default function HourlyForecast({ forecast, icon }: ForecastListProps) {
   return (
     <HourlyForecastContainer>
       <h4>Today&#39;s Weather</h4>
-      <div>
         <HourlyForecastCardContainer>
           {upcomingForecast ?
             upcomingForecast.map((e, i) => (
@@ -31,7 +31,6 @@ export default function HourlyForecast({ forecast, icon }: ForecastListProps) {
               />
             )):null}
         </HourlyForecastCardContainer>
-      </div>
     </HourlyForecastContainer>
   );
 }

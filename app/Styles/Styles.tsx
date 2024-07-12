@@ -10,14 +10,18 @@ const horizontalScrollAnimation = keyframes`
 
 export const Body = styled.body`
   min-height: 90vh;
-  background-image: linear-gradient(to bottom right, #0c36b4ab, #0c36b4ab),
-    url("assets/clouds.jpg");
+  background-image: linear-gradient(to bottom right, #0c36b4e2, #0c36b4e2),
+    url("/assets/clouds.jpg");
     background-size: contain;
   width: 100%;
   animation-name: ${horizontalScrollAnimation};
   animation-duration: 60s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  @media (max-width: 768px) {
+    animation-duration: 20s;
+    background-size: cover;
+  }
 `;
 
 export const RootContainer = styled.div`
@@ -185,7 +189,7 @@ export const HourlyForecastCard = styled.div`
 `;
 
 export const NavbarContainer = styled.nav`
-  background-color: var(--primary);
+  background-color: #22222228;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;

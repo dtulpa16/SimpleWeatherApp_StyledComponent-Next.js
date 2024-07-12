@@ -21,14 +21,15 @@ export default function HourlyForecast({ forecast, icon }: ForecastListProps) {
       <h4>Today&#39;s Weather</h4>
       <div>
         <HourlyForecastCardContainer>
-          {upcomingForecast.map((e, i) => (
-            <HourForecastCard
-              key={i}
-              time={formatTime(e.time)}
-              icon={icon}
-              temp={e.temp_f}
-            />
-          ))}
+          {upcomingForecast ?
+            upcomingForecast.map((e, i) => (
+              <HourForecastCard
+                key={i}
+                time={formatTime(e.time)}
+                icon={icon}
+                temp={e.temp_f}
+              />
+            )):null}
         </HourlyForecastCardContainer>
       </div>
     </HourlyForecastContainer>

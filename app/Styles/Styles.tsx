@@ -5,22 +5,24 @@ import styled from "styled-components";
 
 const horizontalScrollAnimation = keyframes`
  0% { background-position: 0 }
- 100% { background-position: 100vw }
+ 100% { background-position: 2889px }
 `;
 
 export const Body = styled.body`
   min-height: 90vh;
-  background-image: linear-gradient(to bottom right, #0c36b4e2, #0c36b4e2),
+  background-image: linear-gradient(to bottom right, #0137dad6, #0137dad6),
     url("/assets/clouds.jpg");
     background-size: contain;
   width: 100%;
   animation-name: ${horizontalScrollAnimation};
-  animation-duration: 60s;
+  animation-duration: 140s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   @media (max-width: 768px) {
-    animation-duration: 20s;
+    animation-duration: 120s;
     background-size: cover;
+    background-image: linear-gradient(to bottom right, #0137dadf, #0137dadf),
+    url("/assets/clouds.jpg");
   }
 `;
 

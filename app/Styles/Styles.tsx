@@ -1,6 +1,35 @@
 "use client";
-
+import { keyframes } from "styled-components";
 import styled from "styled-components";
+
+
+const horizontalScrollAnimation = keyframes`
+ 0% { background-position: 0 }
+ 100% { background-position: 100vw }
+`;
+
+export const Body = styled.body`
+  min-height: 90vh;
+  background-image: linear-gradient(to bottom right, #0c36b4ab, #0c36b4ab),
+    url("assets/clouds.jpg");
+    background-size: contain;
+  width: 100%;
+  animation-name: ${horizontalScrollAnimation};
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+`;
+
+export const RootContainer = styled.div`
+  max-width: 1192px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding-top: 4rem;
+`;
+
+
 
 export const FormHeader = styled.h1`
   color: var(--darkblue);
@@ -49,7 +78,6 @@ export const Form = styled.form`
   gap: 1.5rem;
   margin: 0 auto;
   width: 100%;
-  
 `;
 export const LocationSearchContainer = styled.div`
   padding: 2rem 2rem;
@@ -59,7 +87,7 @@ export const LocationSearchContainer = styled.div`
   max-width: 50%;
   flex-direction: column;
   align-items: center;
-  gap: .4rem;
+  gap: 0.4rem;
   background-color: #f7f7fa;
   margin: 0 auto;
   width: 100%;
@@ -68,7 +96,16 @@ export const LocationSearchContainer = styled.div`
     box-shadow: none;
   }
 `;
-
+export const WeatherPageContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  @media (max-width: 768px) {
+    padding: 0.5rem 0.8rem;
+    gap: 1rem;
+  }
+`;
 export const SearchButton = styled(Button)`
   width: 10rem;
 `;
@@ -80,24 +117,12 @@ export const SearchPageContainer = styled.div`
   justify-content: center;
   width: 100%;
   @media (max-width: 768px) {
-    height: 95vh;
+    height: 100vh;
     background-color: #f7f7fa;
   }
 `;
 
-export const Body = styled.body`
-  min-height: 100vh;
-  background-image: linear-gradient(to bottom right, #0c36b4, #3838f8e4);
-`;
 
-export const RootContainer = styled.div`
-  max-width: 1192px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  padding-top: 4rem;
-`;
 
 export const HourlyForecastContainer = styled.div`
   display: flex;

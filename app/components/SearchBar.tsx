@@ -8,6 +8,7 @@ import {
   SearchPageContainer,
   LocationSearchContainer,
   Italic,
+  
 } from "../Styles/Styles";
 import GlobalStyle from "../Styles/GlobalStyles";
 import { searchWeather } from "@/app/utils/actions/search";
@@ -20,6 +21,7 @@ export default function SearchBar() {
   return (
     <>
       <GlobalStyle />
+      
       <SearchPageContainer>
         <LocationSearchContainer>
           <Form action={searchWeather}>

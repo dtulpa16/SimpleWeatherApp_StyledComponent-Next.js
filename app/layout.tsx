@@ -16,12 +16,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <StyledComponentsRegistry>
       <Body className="">
         <Navbar />
         <RootContainer>
-          <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+          {children}
         </RootContainer>
       </Body>
+      </StyledComponentsRegistry>
     </html>
   );
 }

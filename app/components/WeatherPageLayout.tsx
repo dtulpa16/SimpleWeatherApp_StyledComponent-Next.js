@@ -1,4 +1,4 @@
-"use client";
+
 import React from "react";
 import { WeatherApiResponse } from "../utils/types";
 import styled from "styled-components";
@@ -7,16 +7,8 @@ import CurrentWeather from "./CurrentWeather";
 import GlobalStyle from "../Styles/GlobalStyles";
 import HourlyForecast from "./HourlyForecast";
 import WeeklyForecast from "./WeeklyForecast";
-const WeatherPageContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 2rem;
-  @media (max-width: 768px) {
-    padding: 0.5rem 0.8rem;
-    gap: 1rem;
-  }
-`;
+import { WeatherPageContainer } from "../Styles/Styles";
+
 export default function WeatherPageLayout({ weather }: WeatherApiResponse) {
   return (
     <>

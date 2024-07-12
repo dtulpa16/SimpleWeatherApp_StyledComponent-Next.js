@@ -67,7 +67,7 @@ export const Button = styled.button`
   cursor: pointer;
   border-radius: 0.5rem;
   transition: all 0.2s;
-  border: 1px solid #ffffff;
+  border: 1px solid #ffffffba;
   &:hover {
     transform: scaleX(102%);
     background-color: white;
@@ -94,7 +94,7 @@ export const LocationSearchContainer = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 0.4rem;
-  background-color: #f7f7fa;
+  background-color: #f7f7faec;
   margin: 0 auto;
   width: 100%;
   @media (max-width: 768px) {
@@ -123,8 +123,7 @@ export const SearchPageContainer = styled.div`
   justify-content: center;
   width: 100%;
   @media (max-width: 768px) {
-    height: 100vh;
-    background-color: #f7f7fa;
+    background-color: #f7f7fa21;
   }
 `;
 

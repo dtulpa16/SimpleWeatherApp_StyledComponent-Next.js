@@ -1,6 +1,6 @@
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
-  const location = searchParams.get("location")?.replace(",", ' ');
+  const location = searchParams.get("location")?.replace(",", ' ').toString();
 
   const url =`https://weatherapi-com.p.rapidapi.com/forecast.json?q=${location}&days=5`;
 

@@ -29,7 +29,7 @@ export default function SearchBar() {
             <Input
               name="search"
               type="text"
-              placeholder="Enter City, State, or ZIP Code"
+              placeholder="Enter City or State"
             />
             <SearchButton>Search</SearchButton>
           </Form>

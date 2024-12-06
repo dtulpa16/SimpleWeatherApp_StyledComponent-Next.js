@@ -9,7 +9,7 @@ export default async function WeatherDetailsPage({
 }: {
   params: { slug: string };
 }) {
-  const location = params.slug || "Chicago, Il";
+  const location = params.slug.toString() || "Chicago, Il";
   const data = await fetch(
     `${process.env.BASE_URL}/api/weather?location=${location}`
   );

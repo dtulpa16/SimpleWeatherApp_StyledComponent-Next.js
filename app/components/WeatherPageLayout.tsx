@@ -14,7 +14,7 @@ export default function WeatherPageLayout({ weather }: WeatherApiResponse) {
       <GlobalStyle />
 
       <WeatherPageContainer>
-        {!weather.error ? (
+        {weather && !weather.error ? (
           <>
             <Header
               location={weather.location.name + ", " + weather.location.region}
